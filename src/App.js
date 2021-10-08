@@ -1,25 +1,75 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import Card from './components/Card'
+import Connections from './components/Connections'
+import Nav from './components/Nav'
+import Header from './components/Header'
+import './components/app.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    const fetch = async () => {
+      const res = await axios.get('./data.json')
+      setData(res.data.data)
+    }
+    fetch()
+  }, [])
+  let reqReceived = (
+    <div>
+      {data.map((element) => {
+        if(element.connected) {
+          return (
+            <Connections
+              key={element.name}
+              name={element.name}
+              job={element.job}
+              connections={element.connections}
+              avatar={element.avatar}
+            />
+          )
+        }
+      })}
     </div>
-  );
+  )
+
+  let suggestions = (
+    <div className="suggestions">
+      {data.map((element) => {
+        if(!element.connected) {
+          return (
+            <Card
+              key={element.name}
+              name={element.name}
+              job={element.job}
+              connections={element.connections}
+              avatar={element.avatar}
+            />
+          )
+        }
+      })}
+    </div>
+  )
+
+
+  return (
+    <div>
+      <Nav/>
+      <Header/>
+      <div className="container">
+        <div className="divider">
+          <hr />
+          {/* <span>Yoy have 2 new Connections</span> */}
+        </div>
+        {reqReceived}
+        <div className="divider">
+          <hr />
+          {/* <span>Yoy have 2 new Connections</span> */}
+        </div>
+        {suggestions}
+      </div>
+    </div>
+  )
 }
 
-export default App;
+export default App

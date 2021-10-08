@@ -1,0 +1,55 @@
+.connections {
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.connections__right {
+    display: flex;
+    align-items: center;
+}
+
+.connections__left {
+    display: flex;
+    align-items: center;
+}
+
+.connections__right__info {
+    margin-left: 15px;
+}
+
+.connections__right__info > .name {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.connections__right__info > .job {
+    color: rgb(37, 36, 36);
+    font-size: 14px;
+}
+
+.connections__right__info > .number {
+    color: rgb(0, 110, 255);
+    font-size: 14px;
+}
+
+.connections__left > .connected {
+    margin-right: 5px;
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(0, 140, 255);
+    color: white;
+}
+
+.connections__left > .decline {
+    margin-left: 5px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

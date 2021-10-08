@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "name": "Mrinal Seth",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": true,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/1.svg"
+        },
+        {
+            "name": "Aman Kumar",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": true,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/2.svg"
+        },
+        {
+            "name": "name1",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/3.svg"
+        },
+        {
+            "name": "name2",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/23.svg"
+        },
+        {
+            "name": "name3",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/4.svg"
+        },
+        {
+            "name": "name4",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/5.svg"
+        },
+        {
+            "name": "name5",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/6.svg"
+        },
+        {
+            "name": "name6",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/7.svg"
+        },
+        {
+            "name": "name7",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/8.svg"
+        },
+        {
+            "name": "name8",
+            "job": "Desc of what he does at his job",
+            "connections": 45,
+            "connected": false,
+            "avatar": "https://avatars.dicebear.com/api/avataaars/8.svg"
+        }
+    ]
+}

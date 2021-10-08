@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(230, 222, 222);
+}
+
+.container {
+    width: 65%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.container > .divider {
+    text-align: center;
+}
+
+.container > .divider > hr {
+    background-color: black;
+    height: 2px;
+}
+
+.container > .divider > span {
+    background-color: lightblue;
+}
+
+.suggestions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
